@@ -1,0 +1,67 @@
+/* Home Page Styles */
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* Header Section */
+  .home-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .home-header p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  /* Login Cards Container */
+  .login-card-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  /* Individual Login Card */
+  .login-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .login-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .login-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .login-card p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* Hover Effect */
+  .login-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  

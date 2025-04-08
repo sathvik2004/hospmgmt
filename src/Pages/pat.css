@@ -1,0 +1,318 @@
+/* General Page Styling */
+.patient-container {
+    background-color: #f0f8ff; /* Light Blue Background */
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #008080; /* Teal */
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar button {
+    background: white;
+    color: #008080;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .navbar button:hover {
+    background: #005f5f;
+    color: white;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background: #ff4d4d !important;
+    color: white !important;
+  }
+  
+  /* Dashboard Content */
+  .patient-content {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dashboard Heading */
+  .dashboard-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-container p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Grid Layout for Cards */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Dashboard Cards */
+  .dashboard-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dashboard-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-card ul li {
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-card ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Custom Card Styles */
+  .appointments-card { border-left: 6px solid #3498db; }  /* Blue */
+  .fees-card { border-left: 6px solid #ff6f00; }          /* Orange */
+  .health-tips-card { border-left: 6px solid #27ae60; }  /* Green */
+  .prescriptions-card { border-left: 6px solid #e74c3c; } /* Red */
+  .reviews-card { border-left: 6px solid #8e44ad; }       /* Purple */
+  
+  /* Chat Section */
+  .chat-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .chat-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .chat-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-message {
+    max-width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .chat-message.sent {
+    background: #008080;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .chat-message.received {
+    background: #ddd;
+    align-self: flex-start;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .chat-input button {
+    background: #008080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .chat-input button:hover {
+    background: #005f5f;
+  }
+  
+  /* SOS Button */
+  .sos-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .sos-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* SOS Modal */
+  .sos-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sos-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .sos-content h2 {
+    font-size: 22px;
+    color: red;
+  }
+  
+  .sos-content button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sos-content button:first-child {
+    background: red;
+    color: white;
+  }
+  
+  .sos-content button:last-child {
+    background: gray;
+    color: white;
+  }
+  .disease-container {
+    padding: 2rem;
+    background: #f0f4ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .symptoms-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .predict-btn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .predict-btn:hover {
+    background: #005dc0;
+  }
+  
+  .prediction-result-card {
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-left: 5px solid #0077ff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .analyzing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-left-color: #09f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+    
+  
